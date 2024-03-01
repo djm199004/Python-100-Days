@@ -15,3 +15,4 @@ print('%d / %d = %f' % (a, b, a / b))
 print('%d // %d = %d' % (a, b, a // b))
 print('%d %% %d = %d' % (a, b, a % b))
 print('%d ** %d = %d' % (a, b, a ** b))
+print('%d / %d = %d' % (a, b, a / b))   #整数可以输出，输出为整数部分
