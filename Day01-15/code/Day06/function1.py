@@ -32,3 +32,15 @@ print(add(1, 2))
 print(add(1, 2, 3))
 print(add(1, 3, 5, 7, 9))
 #测试：for in 表示遍历其中的元素
+
+def foo():
+    print('hello, world!')
+
+
+def foo():
+    print('goodbye, world!')
+
+
+# 下面的代码会输出什么呢？
+foo()
+#测试foo()函数会输出什么
