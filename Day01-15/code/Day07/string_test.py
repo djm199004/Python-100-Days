@@ -44,3 +44,8 @@ print(str1.rjust(10, '*'))
 
 a, b = 5, 10
 print('{0} * {1} = {2}'.format(a, b, a * b))
+
+list1 = [1, 3, 5, 7, 100]
+print(list1)
+for index, elem in enumerate(list1):
+    print(index, elem)
