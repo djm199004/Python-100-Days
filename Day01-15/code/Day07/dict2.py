@@ -26,6 +26,13 @@ def main():
     stu['score'] = 100
     print(stu)
 
+    list_ = [1, 2, 3]
+    print(list_, f'has a length of {len(list_)}.')
+    # [1,2,3] has a length of 3.
+    print(list_, f'has a length of {{len(list_)}}.')
+    # [1,2,3] has a length of {len(list_)}.
+    print(list_, f'has a length of {{{len(list_)}}}.')
+    print(list_, 'has a length of len(list_).')
 
 if __name__ == '__main__':
     main()

@@ -27,8 +27,11 @@ def main():
     print(scores.popitem())
     print(scores.pop('骆昊', 100))
     print(scores)
+    for key in scores:
+        print(f'{key}: {scores[key]}')
     scores.clear()
     print(scores)
+
 
     # 创建字典的构造器语法
     items1 = dict(one=1, two=2, three=3, four=4)
