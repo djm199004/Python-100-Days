@@ -53,8 +53,9 @@ car.brand = "Benz"
 # car.current_speed = 80
 print(car)
 # 如果提供了删除器可以执行下面的代码
-# del car.brand
+del car.brand
 # 属性的实现
+# print(car.brand)
 print(Car.brand)
 print(Car.brand.fget)
 print(Car.brand.fset)
