@@ -7,8 +7,13 @@ Date: 2018-03-08
 """
 
 
-def _foo():
-    print('test')
+class Test:
+    def __init__(self, foo):
+        self.__foo = foo
+
+    def __bar(self):
+        print(self.__foo)
+        print('__bar')
 
 
 class Student(object):
@@ -39,6 +44,11 @@ def main():
     stu2.study('思想品德')
     stu2.watch_av()
 
+    test = Test('hello')
+    # AttributeError: 'Test' object has no attribute '__bar'
+    test.__bar()
+    # AttributeError: 'Test' object has no attribute '__foo'
+    print(test.__foo)
 
 if __name__ == '__main__':
     main()
